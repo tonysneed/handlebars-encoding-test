@@ -6,7 +6,7 @@
         /// </summary>
 {{/if}}
 {{#each property-annotations}}
-        {{{property-annotation}}}
+        {{property-annotation}}
 {{/each}}
         public {{property-type}} {{property-name}} { get; set; }{{#if nullable-reference-types }}{{#unless property-isnullable}} = default!;{{/unless}}{{/if}}
 {{/each}}
@@ -14,7 +14,7 @@
 
 {{#each nav-properties}}
 {{#each nav-property-annotations}}
-        {{{nav-property-annotation}}}
+        {{nav-property-annotation}}
 {{/each}}
 {{#if nav-property-collection}}
         public virtual ICollection<{{nav-property-type}}> {{nav-property-name}} { get; set; }{{#if nullable-reference-types}} = default!;{{/if}}

@@ -13,7 +13,7 @@ namespace FakeNamespace
     /// <summary>
     /// 产品
     /// </summary>
-    public partial class 
+    public partial class Product : EntityBase<int>
     {
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace FakeNamespace
     /// </summary>
     [Table(""Product"")]
     [Index(nameof(CategoryId), Name = ""IX_Product_CategoryId"")]
-    public partial class 
+    public partial class Product : EntityBase<int>
     {
 
         /// <summary>
@@ -78,7 +78,7 @@ namespace FakeNamespace
     /// <summary>
     /// &#20135;&#21697;
     /// </summary>
-    public partial class 
+    public partial class Product : EntityBase<int>
     {
 
         /// <summary>
@@ -111,7 +111,7 @@ namespace FakeNamespace
     /// </summary>
     [Table(""Product"")]
     [Index(nameof(CategoryId), Name = ""IX_Product_CategoryId"")]
-    public partial class 
+    public partial class Product : EntityBase<int>
     {
 
         /// <summary>

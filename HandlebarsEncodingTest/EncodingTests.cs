@@ -54,6 +54,8 @@ namespace HandlebarsEncodingTest
             var templateData = new Dictionary<string, object>();
             templateData.Add("use-data-annotations", useDataAnnotations);
             templateData.Add("namespace", "FakeNamespace");
+            templateData.Add("class", "Product");
+            templateData.Add("base-class", "EntityBase<int>");
             templateData.Add("comment", "    /// 产品");
 
             AddClassAnnotations(templateData, useDataAnnotations);

@@ -8,11 +8,11 @@ namespace {{namespace}}
     /// </summary>
     {{/if}}
     {{#each class-annotations}}
-    {{{class-annotation}}}
+    {{class-annotation}}
     {{/each}}
-    public partial class {{class}}
+    public partial class {{class}} : {{base-class}}
     {
-        {{{> constructor}}}
-        {{{> properties}}}
+        {{> constructor}}
+        {{> properties}}
     }
 }
